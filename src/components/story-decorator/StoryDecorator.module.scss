@@ -1,0 +1,10 @@
+// src/components/story-decorator/StoryDecorator.module.scss
+
+@import '../../styles/index';
+
+.storybookContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}

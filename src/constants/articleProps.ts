@@ -1,3 +1,5 @@
+// src/contacts/articleProps.ts
+
 export const fontFamilyClasses = [
 	'open-sans',
 	'ubuntu',
