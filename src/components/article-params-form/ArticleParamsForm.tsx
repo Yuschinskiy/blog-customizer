@@ -6,6 +6,7 @@ import { Button } from 'src/ui/button';
 import { Separator } from 'src/ui/separator';
 import { RadioGroup } from 'src/ui/radio-group';
 import { Select } from 'src/ui/select';
+import clsx from 'clsx'; // ← Добавляем импорт clsx
 
 import styles from './ArticleParamsForm.module.scss';
 import {
@@ -91,7 +92,11 @@ export const ArticleParamsForm = ({
 			<ArrowButton isOpen={isOpen} onClick={handleOpen} />
 			<aside
 				ref={formRef}
-				className={`${styles.container} ${isOpen ? styles.container_open : ''}`}
+				// ЗАМЕНА: используем clsx вместо конкатенации строк
+				className={clsx(
+					styles.container,
+					{ [styles.container_open]: isOpen } // ← условие с использованием объекта
+				)}
 				style={{
 					transform: isOpen ? 'translate(0)' : 'translate(-616px)',
 					transition: 'transform 0.5s ease',

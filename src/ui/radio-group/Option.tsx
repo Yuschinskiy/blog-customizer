@@ -1,3 +1,5 @@
+// src/ui/radio-group/Option.tsx
+
 import { useRef } from 'react';
 import { OptionType } from 'src/constants/articleProps';
 import { Text } from 'src/ui/text';
@@ -24,7 +26,7 @@ export const Option = (props: OptionProps) => {
 	useEnterSubmit({ onChange, option });
 
 	const inputId = `${groupName}_radio_item_with_value__${value}`;
-	const isChecked = value === selected.title;
+	const isChecked = value === selected.value;
 
 	return (
 		<div

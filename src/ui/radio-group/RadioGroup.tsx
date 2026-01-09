@@ -1,3 +1,5 @@
+// src/ui/select/RadioGroup.ts
+
 import { OptionType } from 'src/constants/articleProps';
 import { Text } from 'src/ui/text';
 import { Option } from './Option';
