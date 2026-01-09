@@ -1,18 +1,18 @@
-// src/ui/radio-group/RadioGroup.stories.tsx
+// src/components/select/Select.stories.tsx
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { RadioGroup } from './RadioGroup';
+import { Select } from './Select';
 import { useState } from 'react';
 
-const meta: Meta<typeof RadioGroup> = {
-	component: RadioGroup,
+const meta: Meta<typeof Select> = {
+	component: Select,
 };
 
 export default meta;
-type Story = StoryObj<typeof RadioGroup>;
+type Story = StoryObj<typeof Select>;
 
-const RadioGroupWithState = () => {
+const SelectWithState = () => {
 	const options = [
 		{ title: '1 опция', value: '1 опция', className: '' },
 		{ title: '2 опция', value: '2 опция', className: '' },
@@ -23,17 +23,16 @@ const RadioGroupWithState = () => {
 
 	return (
 		<>
-			<RadioGroup
+			<Select
 				selected={selected}
-				name='radio'
 				onChange={setSelected}
 				options={options}
-				title='Название радиогруппы'
+				title='Название выпадающего списка'
 			/>
 		</>
 	);
 };
 
-export const RadioGroupStory: Story = {
-	render: () => <RadioGroupWithState />,
+export const SelectStory: Story = {
+	render: () => <SelectWithState />,
 };

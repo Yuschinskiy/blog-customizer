@@ -1,4 +1,4 @@
-// src/ui/radio-group/RadioGroup.stories.tsx
+// src/components/radio-group/RadioGroup.stories.tsx
 
 import type { Meta, StoryObj } from '@storybook/react';
 
