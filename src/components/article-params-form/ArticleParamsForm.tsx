@@ -112,8 +112,6 @@ export const ArticleParamsForm = ({
 						onChange={handleChange('fontFamilyOption')}
 					/>
 
-					<Separator />
-
 					<RadioGroup
 						title='Размер шрифта'
 						name='fontSize'
@@ -121,8 +119,6 @@ export const ArticleParamsForm = ({
 						options={fontSizeOptions}
 						onChange={handleChange('fontSizeOption')}
 					/>
-
-					<Separator />
 
 					<Select
 						title='Цвет шрифта'
@@ -139,8 +135,6 @@ export const ArticleParamsForm = ({
 						options={backgroundColors}
 						onChange={handleChange('backgroundColor')}
 					/>
-
-					<Separator />
 
 					<RadioGroup
 						title='Ширина контента'
